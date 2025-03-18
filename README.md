@@ -7,7 +7,7 @@ Bienvenue sur mon portfolio en ligne, hébergé avec **GitHub Pages** ! Ce site 
 ---
 
 ## 📌 **Aperçu du site**
-![Aperçu](images/screenshot.png)
+![Aperçu](images\about\2.png)
 
 ---
 
