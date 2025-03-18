@@ -1,0 +1,78 @@
+/* css/style.css */
+body {
+    padding-top: 70px; /* ajustement pour navbar fixe */
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .navbar-collapse {
+    background-color: #343a40;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+  }
+  
+  .about-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .social-icon {
+    width: 50px;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .social-icon {
+    width: 80px; /* Ajuste cette taille pour obtenir le résultat souhaité */
+    height: auto;
+    margin-bottom: 8px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+  
+  #about img {
+    width: 200px; /* Ajuste la taille selon tes besoins */
+    height: 200px;
+    border-radius: 50%; /* Rendre l'image circulaire */
+    object-fit: cover; /* Ajuste l'image pour bien remplir le cercle */
+    display: block;
+    margin: 0 auto; /* Centrage parfait */
+    border: 4px solid #fff; /* Ajoute une bordure blanche pour plus de propreté */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner du relief */
+  }
+  body {
+    background: url('images\contact\dataviz_background.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9;
+  }
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* 90% opaque */
+    z-index: -1;
+ }
+ 

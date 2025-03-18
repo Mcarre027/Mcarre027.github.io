@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Compétences - Matthieu Carré</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      position: relative;
+      background-color: #f8f9fa;
+    }
+    /* Nuage de mots en arrière-plan */
+    .word-cloud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .word {
+      position: absolute;
+      font-weight: bold;
+      opacity: 0.8;
+      color: rgba(102, 103, 171, 0.8);
+    }
+    /* Ajustement des cartes de compétences */
+    .skill-card {
+      background-color: rgba(255, 255, 255, 0.8); /* Ajout de transparence */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .skill-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Nuage de mots en arrière-plan -->
+<div class="word-cloud">
+  <span class="word" style="top: 10%; left: 20%; font-size: 3rem; color: #6667ab;">Leadership</span>
+  <span class="word" style="top: 20%; left: 60%; font-size: 2.5rem; color: #ff7f50;">Adaptabilité</span>
+  <span class="word" style="top: 30%; left: 40%; font-size: 2rem; color: #008080;">Communication</span>
+  <span class="word" style="top: 50%; left: 75%; font-size: 2.8rem; color: #dc143c;">Esprit critique</span>
+  <span class="word" style="top: 70%; left: 10%; font-size: 3.2rem; color: #4682b4;">Résolution de problèmes</span>
+  <span class="word" style="top: 80%; left: 50%; font-size: 2.6rem; color: #ff4500;">Gestion du temps</span>
+  <span class="word" style="top: 40%; left: 20%; font-size: 3rem; color: #32cd32;">Travail en équipe</span>
+  <span class="word" style="top: 60%; left: 85%; font-size: 2.4rem; color: #800080;">Autonomie</span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="index.html">Mathieu Carré</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+      <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+      <li class="nav-item active"><a class="nav-link" href="skills.html">Compétences</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- Section Compétences -->
+<section id="skills" class="container py-5">
+  <h1 class="text-center mb-5">Mes Compétences</h1>
+  <div class="row">
+    
+    <!-- Python & Data Analysis -->
+    <div class="col-md-6 mb-4">
+      <div class="card skill-card">
+        <img src="images\skills\1.png" alt="Python">
+        <h5>Python & Data Analysis</h5>
+        <p>Pandas, NumPy, Nettoyage et traitement des données.</p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certification</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1KMKmY4pT1O8Kr-TcH3k3n7YbC0vPz-Lx/view?usp=sharing" target="_blank">Certification Python</a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1Ug19xQjN3Pe_H7QTm-EZ1B8ebpRb1DLt/view?usp=sharing" target="_blank">Certification statistique exploratoire </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1nhjvNZQ0liu2ySn6TDxTgj0cRElPzo-G/view?usp=sharing" target="_blank">Certification matplotlib</a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1zAM_45LyMcbt811r5sNnktai7mRU5KcC/view?usp=sharing" target="_blank">Certification seaborn </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1qY3HwleZqXpwyCT64VEMr1XLj_ohUpqr/view?usp=sharing" target="_blank">Certification plotly </a>
+        
+        
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SQL -->
+    <div class="col-md-6 mb-4">
+      <div class="card skill-card">
+        <img src="images\skills\3.png" alt="SQL">
+        <h5>SQL</h5>
+        <p>Requêtes complexes, gestion des bases de données.</p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certification</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" target="_blank">Certification SQL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="col-md-6 mb-4">
+      <div class="card skill-card">
+        <img src="D:\formation data analyst\mon-portefolio\Portefolio_doc\mon portefolio\images\skills\7.png" alt="Machine Learning">
+        <h5>Machine Learning</h5>
+        <p>Modèles prédictifs (Random Forest, Régression linéaire).</p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certification</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1mrigLRL4FmEtM_wk8k6toKGTuNnckKZn/view?usp=sharing" target="_blank">Certification Machine Learning supervised</a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1y_7wb0gEuolGy9bRbb_le4K1uyrE6BMB/view?usp=sharing" target="_blank">Certification Advanced classification </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1gPZZ7Kpi1gwpKbeYeAdO7ugdRO4gRUXS/view?usp=sharing" target="_blank">Certification Unsupervised method </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1eUuPS1Ldx8AvlerQsJk5-Unb2Xb60D8X/view?usp=sharing" target="_blank">Certification Pipeline </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1yXnnwnYFsyY9Qh60PXULqvViOLRu1gfV/view?usp=sharing" target="_blank">Certification Time series </a>
+            <a class="dropdown-item" href="https://drive.google.com/file/d/1Z4RZLsPbCOOfbH3J02tlzdlouPKfGZ6-/view?usp=sharing" target="_blank">Certification Text mining </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Power BI -->
+    <div class="col-md-6 mb-4">
+      <div class="card skill-card">
+        <img src="images\skills\5.png" alt="Power BI">
+        <h5>Power BI & Looker Studio</h5>
+        <p>Création de dashboards et visualisations interactives.</p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certification</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" target="_blank">Certification Power BI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p class="text-center">&copy; 2025 Matthieu Carré - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
