@@ -12,11 +12,11 @@
   <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg">
   <meta property="og:url" content="https://mcarre027.github.io/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio - Mathieu Carré">
+  <meta name="twitter:title" content="Portfolio - Matthieu Carré">
   <meta name="twitter:description" content="Découvrez mes projets en Data Science et Machine Learning.">
   <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg">
 
-  <title>Accueil - Portfolio Matthieu Carré</title>
+  <title>Accueil - Portfolio Matthieu CARRÉ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -25,7 +25,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.html">Matthieu Carré</a>
+  <a class="navbar-brand" href="index.html">Matthieu CARRÉ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,7 +43,7 @@
 <!-- Accueil -->
 <header class="jumbotron text-center position-relative" style="background: linear-gradient(to bottom, #f8f9fa, #e9ecef); padding-bottom: 200px;">
   <h1 class="display-4">Bienvenue sur mon Portfolio !</h1>
-  <p class="lead">Je suis Matthieu Carré, Data Analyst spécialisé dans l'industrie pharmaceutique.</p>
+  <p class="lead">Je suis Matthieu CARRÉ, Data Analyst spécialisé dans l'industrie pharmaceutique.</p>
   <hr class="my-4">
   <p>Découvrez mes projets, compétences et mon parcours professionnel.</p>
   
@@ -56,7 +56,7 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <p class="text-center">&copy; 2025 Matthieu Carré - Tous droits réservés</p>
+  <p class="text-center">&copy; 2025 Matthieu CARRÉ - Tous droits réservés</p>
 </footer>
 
 <!-- Scripts Bootstrap CDN -->
@@ -72,7 +72,7 @@
   var lineChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ['À propos', 'Projets', 'Compétences', 'Contact'],
+      labels: ['À propos', 'Projets', 'Contact', 'Compétences'],
       datasets: [{
         label: '',
         data: [20, 45, 30, 60],
@@ -103,7 +103,7 @@
         tooltip: {
           callbacks: {
             label: function(context) {
-              var links = ['about.html', 'projects.html', 'skills.html', 'contact.html'];
+              var links = ['about.html', 'projects.html', 'contact.html', 'skills.html'];
               return '→ ' + context.label + ' (Cliquez pour ouvrir)';
             }
           }
@@ -112,7 +112,7 @@
       onClick: function(e, activeElements) {
         if (activeElements.length > 0) {
           var index = activeElements[0].index;
-          var links = ['about.html', 'projects.html', 'skills.html', 'contact.html'];
+          var links = ['about.html', 'projects.html', 'contact.html', 'skills.html'];
           window.location.href = links[index];
         }
       }

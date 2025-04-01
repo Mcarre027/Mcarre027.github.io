@@ -1,78 +1,204 @@
 /* css/style.css */
+
 body {
-    padding-top: 70px; /* ajustement pour navbar fixe */
-  }
-  
-  .navbar {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .navbar-collapse {
-    background-color: #343a40;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
-  }
-  
-  .about-section img {
-    width: 80px;
-    height: 80px;
-    border-radius: 40%;
-  }
-  
-  .card {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .social-icon {
-    width: 50px;
-  }
-  
-  .social-icon:hover {
-    opacity: 0.7;
-  }
-  
-  .footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .social-icon {
-    width: 80px; /* Ajuste cette taille pour obtenir le résultat souhaité */
-    height: auto;
-    margin-bottom: 8px;
-    transition: opacity 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    opacity: 0.7;
-  }
-  
-  #about img {
-    width: 200px; /* Ajuste la taille selon tes besoins */
-    height: 200px;
-    border-radius: 50%; /* Rendre l'image circulaire */
-    object-fit: cover; /* Ajuste l'image pour bien remplir le cercle */
-    display: block;
-    margin: 0 auto; /* Centrage parfait */
-    border: 4px solid #fff; /* Ajoute une bordure blanche pour plus de propreté */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner du relief */
-  }
-  body {
-    background: url('images\contact\dataviz_background.png') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.9;
-  }
-  .background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1); /* 90% opaque */
-    z-index: -1;
- }
- 
+  padding-top: 70px;
+  background: url('images/contact/dataviz_background.png') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-collapse {
+  background-color: #343a40;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+}
+
+.about-section img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: visible;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+
+.justify-text p {
+  text-align: justify;
+}
+
+a.text-white:hover {
+  color: #00c6ff;
+  text-decoration: underline;
+}
+
+/* ================= COMPÉTENCES ================= */
+
+.card.skill-card {
+  border: none;
+  border-radius: 1rem;
+  background: rgb(237, 240, 253);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.card.skill-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.skill-card h5.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #003366;
+  padding-left: 0;
+  margin-bottom: 15px;
+  border-left: none !important;
+}
+
+.card.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.card.skill-card ul li {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.card.skill-card ul li::before {
+  content: '\2713';
+  position: static;
+  left: 0;
+  top: 0.15em;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.card.skill-card img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+}
+
+.card.skill-card .btn-primary {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.card.skill-card .btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #00a0e4);
+}
+
+.card.skill-card .dropdown-menu {
+  z-index: 1050 !important;
+  position: absolute !important;
+  top: auto !important;
+  bottom: 100% !important;
+  left: 0;
+  display: none;
+  min-width: 200px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card.skill-card .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.cv-download {
+  background: rgba(237, 240, 253,0.95);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+}
+
+.cv-download h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.cv-download a.btn-download {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cv-download a.btn-download:hover {
+  background: linear-gradient(135deg, #0056b3, #00a0e4);
+}
