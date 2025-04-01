@@ -70,7 +70,8 @@ body {
   z-index: -1;
 }
 
-.justify-text p {
+.justify-text,
+#about p {
   text-align: justify;
 }
 
@@ -201,4 +202,57 @@ a.text-white:hover {
 
 .cv-download a.btn-download:hover {
   background: linear-gradient(135deg, #0056b3, #00a0e4);
+}
+
+/* ================= PROJETS ================= */
+
+.card.project-card {
+  border: none;
+  border-radius: 1rem;
+  background: rgba(237, 240, 253); /* couleur modifiable */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 15px;
+}
+
+.card.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card.project-card h4.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #003366; /* même bleu que sur la page skills */
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-left: none !important;
+}
+
+.card.project-card .btn-primary {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.card.project-card .btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #00a0e4);
+}
+
+/* Centrage mobile des textes dans les cartes */
+@media (max-width: 768px) {
+  .card.skill-card .card-body {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card.skill-card ul {
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+  }
 }
