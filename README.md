@@ -50,6 +50,6 @@ Accéder au site en ligne :
 ✅ Meta-tags optimisés pour le référencement.
 📬 Contact
 📧 Email : carrehomebusiness@gmail.com
-🔗 LinkedIn : [linkedin.com/in/matthieu-carre](https://www.linkedin.com/in/matthieu-carre-data/)
+🔗 LinkedIn : [linkedin.com/in/matthieu-carre] (https://www.linkedin.com/in/matthieu-carre-data/)
 🐙 GitHub : github.com/Mcarre027
 
