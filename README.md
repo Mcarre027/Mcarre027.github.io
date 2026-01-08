@@ -1,40 +1,68 @@
-# 🚀 Portfolio de Mathieu Carré
+# 🚀 Portfolio – Matthieu Carré
 
-Bienvenue sur mon portfolio en ligne, hébergé avec **GitHub Pages** ! Ce site présente mon parcours, mes projets et mes compétences en **Data Analysis, Machine Learning et Gestion de Projets**.
+Bienvenue sur mon **portfolio Data Analyst**, orienté **industrie et santé / pharmaceutique**.  
+Ce site présente mes projets, mes compétences et ma démarche data, avec un focus sur la **qualité des données, la modélisation et la restitution métier**.
 
-🔗 **Accès au site :** [mcarre027.github.io](https://mcarre027.github.io/)
-
----
-
-## 📌 **Aperçu du site**
-![Aperçu](images/about/2.png)
+🔗 **Accès au site** : https://mcarre027.github.io/
 
 ---
 
-## 🌟 **Fonctionnalités**
-- 📜 **À propos** : Présentation de mon parcours et de mes ambitions professionnelles.
-- 🏗️ **Projets** : Showcase de mes travaux en Data Science et Machine Learning.
-- 📊 **Compétences** : Technologies et outils maîtrisés (Python, SQL, Power BI...).
-- 📞 **Contact** : Infos et liens vers mes réseaux professionnels.
+## 🎯 Positionnement
+
+Je me spécialise dans l’analyse de données appliquée à des **contextes concrets et décisionnels**, notamment :
+- performance industrielle
+- qualité et gouvernance des données
+- santé / pharmaceutique
+
+Mon objectif : **transformer des données complexes en analyses exploitables pour la prise de décision**.
 
 ---
 
-## 📂 **Structure du projet**
-/mon-portefolio │── css/ # Feuilles de style CSS │── images/ # Images et illustrations │── icons/ # Icônes pour les réseaux sociaux │── index.html # Page d'accueil │── about.html # Page "À propos" │── projects.html # Page des projets │── skills.html # Page des compétences │── contact.html # Page de contact │── README.md # Documentation du projet │── robots.txt # Fichier SEO │── sitemap.xml 
+## 🧩 Contenu du portfolio
 
-# Plan du site pour SEO
+Le site est structuré autour de plusieurs sections :
 
+- **À propos**  
+  Présentation de mon parcours, de mon évolution vers la data et de mon positionnement professionnel.
+
+- **Projets**  
+  Sélection de projets illustrant :
+  - nettoyage et structuration de données
+  - modélisation et prédiction
+  - visualisation et dashboards
+  - restitution orientée métier
+
+  Un **cas industriel fictif**, inspiré d’un environnement de production pharmaceutique réel (KPIs, arrêts, qualité, performance), est actuellement **en cours de construction**.
+
+- **Compétences**  
+  Python, SQL, Power BI, analyse de données, data quality, visualisation et méthodes de travail structurées.
+
+- **Contact**  
+  Coordonnées et liens professionnels.
 
 ---
 
-## 🚀 **Déploiement avec GitHub Pages**
-1. **Cloner le dépôt** :
-   ```sh
-   git clone https://github.com/Mcarre027/Mcarre027.io.git
-   cd Mcarre027.io
+## 🛠️ Technologies utilisées
+
+- HTML / CSS / Bootstrap  
+- Python (pandas, analyse, modélisation)  
+- SQL  
+- Power BI / visualisation  
+- GitHub Pages (hébergement)
+
+---
+
+## 🚀 Déploiement
+
+Le portfolio est hébergé via **GitHub Pages**.
+
+```bash
+git clone https://github.com/Mcarre027/Mcarre027.io.git
+cd Mcarre027.io
 git add .
 git commit -m "Mise à jour du portfolio"
 git push origin main
+
 
 
 
