@@ -1,78 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="description" content="Mathieu CARRÉ - Data Analyst spécialisé en industrie pharmaceutique. Découvrez mes projets en Data Science et Machine Learning.">
-  <meta name="keywords" content="Data Analyst, Machine Learning, Python, SQL, Power BI, Analyse de données">
-  <meta name="author" content="Matthieu Carré">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Portfolio - Matthieu Carré">
-  <meta property="og:description" content="Découvrez mes compétences en Data Science et mes projets d'analyse de données.">
-  <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg">
-  <meta property="og:url" content="https://mcarre027.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio - Matthieu Carré">
-  <meta name="twitter:description" content="Découvrez mes projets en Data Science et Machine Learning.">
-  <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos de moi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>À propos - Matthieu CARRÉ | Data Analyst (Industrie & Data Quality)</title>
+  <meta name="description" content="Matthieu CARRÉ, Data Analyst orienté performance industrielle et qualité des données (environnements réglementés). 20 ans d’expérience en industrie pharmaceutique." />
+  <meta name="keywords" content="Data Analyst, industrie pharmaceutique, performance industrielle, data quality, gouvernance des données, Python, SQL, Power BI, KPI, TRS" />
+  <meta name="author" content="Matthieu CARRÉ" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="À propos - Matthieu CARRÉ | Data Analyst (Industrie & Data Quality)" />
+  <meta property="og:description" content="Data Analyst orienté performance industrielle & qualité des données, 20 ans d’expérience en industrie pharmaceutique." />
+  <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg" />
+  <meta property="og:url" content="https://mcarre027.github.io/about.html" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="À propos - Matthieu CARRÉ | Data Analyst (Industrie & Data Quality)" />
+  <meta name="twitter:description" content="Data Analyst orienté performance industrielle & qualité des données, 20 ans d’expérience en industrie pharmaceutique." />
+  <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg" />
+
+  <!-- IMPORTANT : Bootstrap d'abord, puis ton CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css?v=20260108-1">
+
+  <style>
+    /* Navbar fixed-top : on pousse le contenu */
+    body { padding-top: 90px; }
+
+    /* Identité centrée */
+    .about-identity { text-align: center; }
+
+    /* Bloc contenu : centré dans la page MAIS texte aligné à gauche */
+    .about-content{
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: left !important;
+    }
+
+    .about-content .lead{
+      margin-top: 1.5rem;
+      color: #555;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .about-content ul{
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .about-content li{ margin-bottom: .45rem; }
+
+  
+
+    /* Photo ronde propre */
+    .about-photo{
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="background-overlay"></div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.html">Matthieu CARRÉ</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-      <li class="nav-item active"><a class="nav-link" href="about.html">À propos</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-      <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Section À propos -->
-<section id="about" class="container py-5">
-  <div class="row justify-content-center text-center">
-    <div class="col-md-8">
-      <img src="images/about/1.jpg" alt="Ma photo" class="mb-4">
-      <h1>Matthieu CARRÉ</h1>
-      <h3 class="text-muted">Data Analyst | Industrie Pharmaceutique</h3>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">Matthieu CARRÉ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item active"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <div class="row justify-content-center mt-4">
-    <div class="col-md-10 justify-text">
-      <p>
-        En reconversion professionnelle vers le métier de <strong>Data Analyst</strong>, je capitalise sur une riche expérience technique acquise dans l'industrie pharmaceutique. Je suis passionné par l'analyse de données, le <strong>Machine Learning</strong> et les outils de <strong>visualisation avancée</strong>.
-      </p>
-      <p>
-        Mon parcours m’a permis de développer une solide expertise en <strong>gestion de projet</strong> et en <strong>amélioration continue</strong>, dans des environnements industriels où la rigueur et la précision sont primordiales. Aujourd’hui, je mets ces compétences au service des technologies modernes telles que <strong>Python</strong>, <strong>SQL</strong>, <strong>Power BI</strong> et le <strong>Machine Learning</strong>.
-      </p>
-      <p>
-        Mon objectif est de rejoindre une entreprise innovante, idéalement dans le secteur pharmaceutique, en tant que <strong>Data Analyst</strong>. Je souhaite y contribuer activement à des projets ambitieux, en apportant une forte valeur ajoutée grâce à mes compétences techniques, mon sens de l’analyse et ma culture de la performance.
-      </p>
+  <section id="about" class="container">
+    <div class="about-identity">
+      <img src="images/about/1.jpg" alt="Photo de Matthieu Carré" class="about-photo mb-4">
+      <h1 class="mb-2">Matthieu CARRÉ</h1>
+      <h3 class="text-muted mb-0">Data Analyst | Performance industrielle & qualité des données</h3>
     </div>
-  </div>
-</section>
 
+    <div class="about-content">
+      <p class="lead">
+        Data Analyst orienté <strong>performance industrielle</strong> et <strong>qualité des données</strong>, avec
+        <strong>20 ans d’expérience en industrie pharmaceutique</strong>. J’accompagne les équipes opérationnelles
+        (production / maintenance / qualité) en transformant des données terrain en <strong>indicateurs fiables</strong>
+        et en <strong>outils d’aide à la décision</strong>, dans des environnements réglementés.
+      </p>
 
+      <h2 class="h5 font-weight-bold mt-4">Ce que j’apporte</h2>
+      <ul class="mt-3">
+        <li><strong>Structuration & fiabilisation des données</strong> (cohérence, traçabilité, qualité)</li>
+        <li><strong>KPI industriels</strong> : TRS, pertes, arrêts, performance, dérives</li>
+        <li><strong>Dashboards décisionnels</strong> (Power BI) pour terrain & management</li>
+        <li><strong>Analyses ad hoc</strong> pour arbitrer, prioriser et piloter des plans d’action</li>
+        <li>Culture <strong>amélioration continue</strong> et collaboration multi-métiers</li>
+      </ul>
 
+      <p class="mt-3"><strong>Outils :</strong> Python (pandas), SQL, Power BI (DAX / Power Query), Excel, Git.</p>
 
-<footer class="footer">
-  <p>&copy; 2025 Matthieu CARRÉ - Tous droits réservés</p>
-</footer>
+      <div class="about-actions">
+        <a href="projects.html" class="btn btn-dark btn-lg">→ Voir les projets</a>
+        <a href="contact.html" class="btn btn-outline-dark btn-lg">Me contacter</a>
+      </div>
+    </div>
+  </section>
 
-<!-- Scripts Bootstrap CDN -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer">
+    <p>&copy; 2026 Matthieu CARRÉ - Tous droits réservés</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

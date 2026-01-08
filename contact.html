@@ -1,100 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="description" content="Matthieu Carré - Data Analyst spécialisé en industrie pharmaceutique. Découvrez mes projets en Data Science et Machine Learning.">
-  <meta name="keywords" content="Data Analyst, Machine Learning, Python, SQL, Power BI, Analyse de données">
-  <meta name="author" content="Matthieu Carré">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Portfolio - Matthieu Carré">
-  <meta property="og:description" content="Découvrez mes compétences en Data Science et mes projets d'analyse de données.">
-  <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg">
-  <meta property="og:url" content="https://mcarre027.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio - Mathieu Carré">
-  <meta name="twitter:description" content="Découvrez mes projets en Data Science et Machine Learning.">
-  <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact - Matthieu Carré</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <meta name="description" content="Contactez Matthieu Carré, Data Analyst orienté performance industrielle, qualité et gouvernance des données en environnement pharmaceutique." />
+  <meta name="keywords" content="Data Analyst, Industrie pharmaceutique, Performance industrielle, Data Quality, Gouvernance des données, Power BI, SQL, Python" />
+  <meta name="author" content="Matthieu Carré" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Contact - Matthieu Carré" />
+  <meta property="og:description" content="Disponible pour échanger : Data Analyst orienté industrie/pharma (Power BI, SQL, Python)." />
+  <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg" />
+  <meta property="og:url" content="https://mcarre027.github.io/contact.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact - Matthieu Carré" />
+  <meta name="twitter:description" content="Data Analyst orienté industrie/pharma. Contact & liens." />
+  <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
   <style>
     body {
-      background: url("images\contact\covid-19-5057462_1920.jpg") no-repeat center center fixed;
+      /* ✅ IMPORTANT : slashes / et pas backslashes \ */
+      background: url("images/contact/covid-19-5057462_1920.jpg") no-repeat center center fixed;
       background-size: cover;
-      color: rgb(7, 7, 7);
+      color: #070707;
+      padding-top: 72px; /* ✅ pour la navbar fixed-top */
     }
+
+    .background-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255, 255, 255, 0.75);
+      z-index: -1;
+    }
+
     .contact-container {
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.85);
       padding: 40px;
       border-radius: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
     }
+
+    .contact-subtitle {
+      max-width: 900px;
+      margin: 0 auto 26px auto;
+      font-size: 1.05rem;
+      color: rgba(0,0,0,0.75);
+    }
+
+    .contact-bullets {
+      max-width: 760px;
+      margin: 0 auto 22px auto;
+    }
+
+    .contact-bullets li {
+      margin-bottom: 8px;
+    }
+
     .social-icon {
-      width: 50px;
-      transition: transform 0.3s;
+      width: 48px;
+      height: 48px;
+      transition: transform 0.2s ease;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
     }
+
     .social-icon:hover {
-      transform: scale(1.1);
+      transform: scale(1.08);
     }
+
+    .list-group-item a {
+      text-decoration: none;
+    }
+
     .footer {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.85);
     }
   </style>
 </head>
+
 <body>
+  <div class="background-overlay"></div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.html">Matthieu CARRÉ</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-      <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
-      <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">Matthieu CARRÉ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- Section Contact -->
-<section id="contact" class="container py-5">
-  <h1 class="text-center mb-4">Me contacter</h1>
-
-  <div class="row justify-content-center">
-    <div class="col-md-8 contact-container text-center">
-      <ul class="list-group list-group-flush text-center">
-        <li class="list-group-item bg-transparent text-white border-light"><strong>Email :</strong> <a href="mailto:carrehomebusiness@gmail.com" class="text-white">carrehomebusiness@gmail.com</a></li>
-        <li class="list-group-item bg-transparent text-white border-light"><strong>Téléphone :</strong> <a href="tel:0683367866" class="text-white">06 83 36 78 66</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </nav>
 
-      <div class="social-icons text-center mt-4">
-        <a href="https://www.linkedin.com/in/matthieu-carre-data/" target="_blank" aria-label="Profil LinkedIn">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mx-2">
-        </a>
+  <!-- Contact -->
+  <section id="contact" class="container py-5">
+    <h1 class="text-center mb-2">Me contacter</h1>
 
-        <a href="https://github.com/Mcarre027" target="_blank" aria-label="Profil GitHub">
-          <img src="icons/github.png" alt="GitHub" class="social-icon mx-2">
-        </a>
+    <p class="text-center contact-subtitle">
+      Data Analyst orienté <strong>industrie / pharmaceutique</strong> — KPI, qualité, gouvernance des données.
+      Power BI • SQL • Python.
+    </p>
 
-        <a href="https://dst-octobre.slack.com/team/U07NQCD9GMT" target="_blank" aria-label="Profil Slack">
-          <img src="icons/slack.png" alt="Slack" class="social-icon mx-2">
-        </a>
+    <ul class="contact-bullets">
+      <li>Création de dashboards décisionnels (TRS, rebuts, arrêts, performance, qualité).</li>
+      <li>Nettoyage / structuration des données + contrôle qualité (règles, cohérence, traçabilité).</li>
+      <li>Traduction du besoin métier en indicateurs actionnables (production, maintenance, qualité).</li>
+    </ul>
+
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-8 contact-container text-center">
+        <ul class="list-group list-group-flush text-center mb-3">
+          <li class="list-group-item bg-transparent text-white border-light">
+            <strong>Email :</strong>
+            <a href="mailto:carrehomebusiness@gmail.com" class="text-white">carrehomebusiness@gmail.com</a>
+          </li>
+          <li class="list-group-item bg-transparent text-white border-light">
+            <strong>Téléphone :</strong>
+            <a href="tel:0683367866" class="text-white">06 83 36 78 66</a>
+          </li>
+        </ul>
+
+        <div class="social-icons text-center mt-4">
+          <a href="https://www.linkedin.com/in/matthieu-carre-data/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mx-2">
+          </a>
+
+          <a href="https://github.com/Mcarre027" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+            <img src="icons/github.png" alt="GitHub" class="social-icon mx-2">
+          </a>
+
+          <!-- ✅ Remplace Slack par ton CV PDF -->
+          <a href="assets\Matthieu_CARRE_Data_Analyst_Pharma_Industrie.pdf" target="_blank" rel="noopener noreferrer" aria-label="Télécharger le CV (PDF)">
+            <img src="images\contact\3.png" alt="CV PDF" class="social-icon mx-2">
+          </a>
+        </div>
+
+        <p class="text-white-50 mt-4 mb-0" style="font-size: 0.95rem;">
+          Réponse rapide par email. LinkedIn pour un premier échange.
+        </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer text-white text-center py-3">
-  <p>&copy; 2025 Matthieu CARRÉ - Tous droits réservés</p>
-</footer>
+  <footer class="footer text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Matthieu CARRÉ - Tous droits réservés</p>
+  </footer>
 
-<!-- Scripts Bootstrap CDN -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

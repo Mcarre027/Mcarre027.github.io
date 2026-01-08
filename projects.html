@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
+<div class="background-overlay"></div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -41,19 +43,29 @@
 
 <!-- Section Projets -->
 <section id="projects" class="container py-5">
-  <h1 class="text-center mb-4">Mes Projets</h1>
+  <h1 class="text-center mb-2">Mes Projets</h1>
+
+  <!-- ✅ Intro courte et orientée impact -->
+  <p class="text-center text-muted mb-4" style="max-width: 900px; margin: 0 auto;">
+    Une sélection de projets orientés <strong>santé / industrie</strong> : nettoyage et structuration de données,
+    modélisation, dashboards et restitution claire pour faciliter la prise de décision.
+  </p>
 
   <div class="row">
- <section id="projects" class="container py-2 mb-2"></section>  
 
     <!-- Projet 1 -->
     <div class="col-md-6 mb-4 d-flex align-items-stretch justify-content-center">
       <div class="card project-card w-100 h-100">
         <div class="card-body text-center">
-          <h4 class="card-title">🔬 PharmaTrace – Analyse des effets secondaires médicamenteux</h4>
-          <p class="card-text">Exploration des effets secondaires de médicaments à partir des données OpenFDA.</p>
-          <img src='images\projects\2.png' class='card-img-top' alt='Pharmacovigilance' style='width: 100%; height: 250px; object-fit: cover;'>
-          <a href="https://pharmatrace.up.railway.app/" class="btn btn-primary mt-2">Voir le projet</a>
+          <h4 class="card-title">🔬 PharmaTrace – Analyse et priorisation des effets indésirables</h4>
+          <p class="card-text">
+            Exploitation des données OpenFDA pour détecter des signaux et mettre en évidence les effets indésirables les plus critiques.
+          </p>
+          <img src="images/projects/2.png" class="card-img-top" alt="Pharmacovigilance"
+               style="width: 100%; height: 250px; object-fit: cover;">
+          <a href="https://pharmatrace.up.railway.app/" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">
+            Voir le projet
+          </a>
         </div>
       </div>
     </div>
@@ -62,33 +74,59 @@
     <div class="col-md-6 mb-4 d-flex align-items-stretch justify-content-center">
       <div class="card project-card w-100 h-100">
         <div class="card-body text-center">
-          <h4 class="card-title" >💉 Prédiction de la couverture vaccinale mondiale  COVID-19</h4>
-          <p class="card-text">Modélisation prédictive de la couverture vaccinale mondiale selon les données OMS/Our World in Data.</p>
-          <img src='images\projects\1.png' class='card-img-top mx-auto' alt='Prédiction de la couverture vaccinale' style='width: 100%; height: 250px; object-fit: cover;'>
-          <a href="https://applypredictionvaccin-production.up.railway.app/" class="btn btn-primary mt-2">Voir le projet</a>
+          <h4 class="card-title">💉 Couverture vaccinale – Prédiction et analyse mondiale (COVID-19)</h4>
+          <p class="card-text">
+            Modèle prédictif basé sur OMS / Our World in Data pour analyser les écarts entre pays et estimer l’évolution de la couverture.
+          </p>
+          <img src="images/projects/1.png" class="card-img-top mx-auto" alt="Prédiction de la couverture vaccinale"
+               style="width: 100%; height: 250px; object-fit: cover;">
+          <a href="https://applypredictionvaccin-production.up.railway.app/" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">
+            Voir le projet
+          </a>
         </div>
       </div>
     </div>
 
-   
-
-    <!-- Projet 4 -->
+    <!-- Projet 3 (ancien Projet 4) -->
     <div class="col-md-6 mb-4 d-flex align-items-stretch justify-content-center">
       <div class="card project-card w-100 h-100">
         <div class="card-body text-center">
-          <h4 class="card-title">⚡ Étude & Prédiction de la consommation électrique en France</h4>
-          <p class="card-text">Analyse et prédiction de la consommation électrique nationale à partir du dataset RTE éco2mix.</p>
-          <img src='images\projects\3.png' class='card-img-top' alt='Prédiction consommation électrique' style='width: 100%; height: 250px; object-fit: cover;'>
-          <a href="https://codeapplyenergygit-kbp4a9hfiyvzhut8kbjjtq.streamlit.app/" class="btn btn-primary mt-2" target="_blank">Voir l'application Streamlit</a>
+          <h4 class="card-title">⚡ Énergie – Prévision de la consommation électrique en France</h4>
+          <p class="card-text">
+            Analyse temporelle du dataset RTE éco2mix et prévision de la consommation pour anticiper les tendances (application Streamlit).
+          </p>
+          <img src="images/projects/3.png" class="card-img-top" alt="Prédiction consommation électrique"
+               style="width: 100%; height: 250px; object-fit: cover;">
+          <a href="https://codeapplyenergygit-kbp4a9hfiyvzhut8kbjjtq.streamlit.app/" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">
+            Voir le projet
+          </a>
         </div>
       </div>
     </div>
+
+    
+    <div class="col-md-6 mb-4 d-flex align-items-stretch justify-content-center">
+      <div class="card project-card w-100 h-100">
+        <div class="card-body text-center">
+          <h4 class="card-title">🏭 Cas industriel (fictif) – KPI, arrêts, qualité, performance</h4>
+          <p class="card-text">
+            Étude de cas inspirée d’un environnement de production pharmaceutique : structure des données, KPIs, dashboard et analyse des dérives.
+          </p>
+          <img src="images\projects\9.png" class="card-img-top" alt="Projet industriel"
+               style="width: 100%; height: 250px; object-fit: cover;">
+          <a href="#" class="btn btn-secondary mt-2 disabled" tabindex="-1" aria-disabled="true">
+            En cours
+          </a>
+        </div>
+      </div>
+    </div>
+    -->
 
   </div>
 </section>
 
 <footer class="footer">
-  <p class="text-center">&copy; 2025 Matthieu CARRÉ - Tous droits réservés</p>
+  <p class="text-center">&copy; 2026 Matthieu CARRÉ - Tous droits réservés</p>
 </footer>
 
 <!-- Scripts Bootstrap CDN -->

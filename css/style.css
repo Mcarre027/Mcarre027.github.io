@@ -1,10 +1,11 @@
 /* css/style.css */
 
+/* ================= BASE ================= */
+
 body {
   padding-top: 70px;
-  background: url('images/contact/dataviz_background.png') no-repeat center center fixed;
+  background: url('../images/contact/dataviz_background.png') no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.9;
 }
 
 .navbar {
@@ -19,15 +20,9 @@ body {
   color: #f8f9fa;
 }
 
-.about-section img {
-  width: 80px;
-  height: 80px;
-  border-radius: 40%;
-}
-
 .card {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  overflow: visible;
+  /* overflow: visible;  <-- supprimé (à garder seulement là où nécessaire) */
 }
 
 .footer {
@@ -36,6 +31,8 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+/* ================= ICONS / SOCIAL ================= */
 
 .social-icon {
   width: 80px;
@@ -48,6 +45,25 @@ body {
   opacity: 0.7;
 }
 
+/* ================= OVERLAY ================= */
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: -1;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+}
 
 #about img {
   width: 200px;
@@ -60,24 +76,37 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.background-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: -1;
+#about p {
+  text-align: left;
 }
 
-.justify-text,
-#about p {
-  text-align: justify;
+.about-content .lead {
+  margin-top: 1.5rem;
+  color: #555;
 }
+
+.about-actions{
+  display: flex !important;
+  justify-content: center !important;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 3%; /* espace avant le footer */
+}
+
+/* ================= LINKS ================= */
 
 a.text-white:hover {
   color: #00c6ff;
   text-decoration: underline;
+}
+
+/* ====== ACCUEIL (hero) : lecture plus "executive" ====== */
+.jumbotron h1,
+.jumbotron .lead,
+.jumbotron p {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ================= COMPÉTENCES ================= */
@@ -88,17 +117,32 @@ a.text-white:hover {
   background: rgb(237, 240, 253);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 15px;
+
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+
   position: relative;
   z-index: 1;
-  overflow: visible;
+
+  overflow: visible; /* ici OK si dropdown */
 }
 
 .card.skill-card.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ✅ FIX alignement vertical colonne image / texte */
+.card.skill-card .row.no-gutters{
+  align-items: center;
+}
+
+/* ✅ FIX centrage propre de l’icône dans sa colonne */
+.card.skill-card .col-md-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card.skill-card h5.card-title {
@@ -123,9 +167,10 @@ a.text-white:hover {
   line-height: 1.5;
 }
 
+/* ✅ FIX : le ✓ doit être en absolute (pas static) */
 .card.skill-card ul li::before {
   content: '\2713';
-  position: static;
+  position: absolute;
   left: 0;
   top: 0.15em;
   color: #007bff;
@@ -175,8 +220,10 @@ a.text-white:hover {
   display: block;
 }
 
+/* ================= CV DOWNLOAD ================= */
+
 .cv-download {
-  background: rgba(237, 240, 253,0.95);
+  background: rgba(237, 240, 253, 0.95);
   text-align: center;
   padding: 40px 20px;
   border-radius: 10px;
@@ -209,7 +256,7 @@ a.text-white:hover {
 .card.project-card {
   border: none;
   border-radius: 1rem;
-  background: rgba(237, 240, 253); /* couleur modifiable */
+  background: rgba(237, 240, 253);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   padding: 15px;
@@ -223,11 +270,10 @@ a.text-white:hover {
 .card.project-card h4.card-title {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #003366; /* même bleu que sur la page skills */
+  color: #003366;
   border-left: 5px solid #007bff;
   padding-left: 10px;
   margin-bottom: 15px;
-  border-left: none !important;
 }
 
 .card.project-card .btn-primary {
@@ -243,16 +289,50 @@ a.text-white:hover {
   background: linear-gradient(135deg, #0056b3, #00a0e4);
 }
 
-/* Centrage mobile des textes dans les cartes */
-@media (max-width: 768px) {
-  .card.skill-card .card-body {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .card.skill-card ul {
-    padding-left: 0;
-    text-align: left;
-    display: inline-block;
-  }
+/* ===== FIX skills : laisser Bootstrap gérer la row/cols ===== */
+
+/* La carte doit être un bloc normal, pas un flex container */
+.skill-card{
+  display: block !important;
+  text-align: center;
+  padding: 20px;
+}
+
+/* La row doit centrer verticalement les colonnes */
+.skill-card .row.no-gutters{
+  align-items: center;
+}
+
+/* Colonne icône : centrage strict */
+.skill-card .col-md-2{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* L'image ne doit pas "pousser" vers le haut */
+.skill-card img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 !important;
+  display: block;
+}
+
+
+/* ===== page contact ===== */
+
+body {
+  background: url("images/contact/covid-19-5057462_1920.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75); /* ajuste ici */
+  z-index: -1;
 }

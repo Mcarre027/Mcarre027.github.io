@@ -3,54 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Matthieu Carré - Data Analyst spécialisé en industrie pharmaceutique. Découvrez mes projets en Data Science et Machine Learning.">
-  <meta name="keywords" content="Data Analyst, Machine Learning, Python, SQL, Power BI, Analyse de données">
+
+  <!-- SEO (orienté industriel/pharma) -->
+  <meta name="description" content="Matthieu Carré - Data Analyst orienté performance industrielle, qualité et gouvernance des données en environnement pharmaceutique. Power BI, SQL, Python.">
+  <meta name="keywords" content="Data Analyst, Industrie pharmaceutique, Performance industrielle, Data Quality, Gouvernance des données, KPI, Power BI, DAX, SQL, Python">
   <meta name="author" content="Matthieu Carré">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Portfolio - Matthieu Carré">
-  <meta property="og:description" content="Découvrez mes compétences en Data Science et mes projets d'analyse de données.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Compétences - Matthieu Carré">
+  <meta property="og:description" content="Compétences Data Analyst orientées performance industrielle, qualité et gouvernance des données (pharma).">
   <meta property="og:image" content="https://mcarre027.github.io/images/about/1.jpg">
   <meta property="og:url" content="https://mcarre027.github.io/">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio - Mathieu Carré">
-  <meta name="twitter:description" content="Découvrez mes projets en Data Science et Machine Learning.">
+  <meta name="twitter:title" content="Compétences - Matthieu Carré">
+  <meta name="twitter:description" content="Compétences Data Analyst orientées performance industrielle, qualité et gouvernance des données (pharma).">
   <meta name="twitter:image" content="https://mcarre027.github.io/images/about/1.jpg">
 
   <title>Mes Compétences - Matthieu CARRÉ</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <style>
     body {
       position: relative;
       background-color: #f8f9fa;
     }
-    /* Nuage de mots en arrière-plan */
-    .word-cloud {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      opacity: 0.1;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
-    .word {
-      position: absolute;
-      font-weight: bold;
-      opacity: 0.8;
-      color: rgba(102, 103, 171, 0.8);
-    }
-    /* Ajustement des cartes de compétences */
+
+    /* Ajustement léger des cartes (on garde ton style, juste clean) */
     .skill-card {
-      background-color: rgba(255, 255, 255, 0.95); /* Ajout de transparence */
+      background-color: rgba(255, 255, 255, 0.95);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -65,20 +53,9 @@
     }
   </style>
 </head>
+
 <body>
-
-
-<!-- Nuage de mots en arrière-plan -->
-<div class="word-cloud">
-  <span class="word" style="top: 10%; left: 20%; font-size: 3rem; color: #6667ab;">Leadership</span>
-  <span class="word" style="top: 20%; left: 60%; font-size: 2.5rem; color: #ff7f50;">Adaptabilité</span>
-  <span class="word" style="top: 30%; left: 40%; font-size: 2rem; color: #008080;">Communication</span>
-  <span class="word" style="top: 50%; left: 75%; font-size: 2.8rem; color: #dc143c;">Esprit critique</span>
-  <span class="word" style="top: 70%; left: 10%; font-size: 3.2rem; color: #4682b4;">Résolution de problèmes</span>
-  <span class="word" style="top: 80%; left: 50%; font-size: 2.6rem; color: #ff4500;">Gestion du temps</span>
-  <span class="word" style="top: 40%; left: 20%; font-size: 3rem; color: #32cd32;">Travail en équipe</span>
-  <span class="word" style="top: 60%; left: 85%; font-size: 2.4rem; color: #800080;">Autonomie</span>
-</div>
+<div class="background-overlay"></div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -97,8 +74,6 @@
   </div>
 </nav>
 
-
-
 <!-- Section Compétences -->
 <section id="skills" class="container py-5">
   <h1 class="text-center mb-5">Mes Compétences</h1>
@@ -114,8 +89,8 @@
           <h5 class="card-title">Data Visualization & BI</h5>
           <p class="card-text">Création de dashboards dynamiques, visualisation de données, suivi de KPIs.</p>
           <ul>
-            <li><strong>Power BI</strong> : Dashboards interactifs, DAX, connecteurs multi-sources</li>
-            <li><strong>Looker Studio</strong> : Visualisations connectées à Google Sheets, BigQuery...</li>
+            <li><strong>Power BI</strong> : dashboards interactifs, DAX, modélisation</li>
+            <li><strong>Looker Studio</strong> : visualisations connectées (Google Sheets, BigQuery…)</li>
           </ul>
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certifications</button>
@@ -129,11 +104,11 @@
     </div>
   </div>
 
-  <!-- Data Engineering & Analyse -->
+  <!-- Python & Data Analysis -->
   <div class="card skill-card mb-4 show">
     <div class="row no-gutters">
       <div class="col-md-2 d-flex align-items-center justify-content-center">
-        <img src="images/skills/1.png" alt="Python & Analysis">
+        <img src="images/skills/1.png" alt="Python & Analysis" class="img-fluid">
       </div>
       <div class="col-md-10">
         <div class="card-body">
@@ -157,18 +132,89 @@
     </div>
   </div>
 
-  <!-- Machine Learning -->
+  <!-- SQL -->
   <div class="card skill-card mb-4">
     <div class="row no-gutters">
       <div class="col-md-2 d-flex align-items-center justify-content-center">
-        <img src="images\skills\7.png" alt="ML" class="img-fluid">
+        <img src="images/skills/3.png" alt="SQL" class="img-fluid">
       </div>
       <div class="col-md-10">
         <div class="card-body">
-          <h5 class="card-title">Machine Learning</h5>
+          <h5 class="card-title">SQL & Bases de Données</h5>
+          <p class="card-text">Requêtes, jointures, agrégations, modélisation relationnelle.</p>
+          <ul>
+            <li><strong>SQL</strong> : standard & avancé</li>
+            <li><strong>Modélisation</strong> : MCD/MPD, logique relationnelle</li>
+            <li><strong>Jointures</strong> : internes/externes</li>
+            <li><strong>Requêtes avancées</strong> : CTE, vues, index</li>
+          </ul>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certifications</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://drive.google.com/file/d/1qjFAM84vi6LVK43wylPLZV54f7RUTNC2/view?usp=sharing" target="_blank">Certification SQL</a>
+              <a class="dropdown-item" href="https://drive.google.com/file/d/17saYoLgyQqCOApF1SkwA_nLgu4WHWszo/view?usp=sharing" target="_blank">Certification Data Integration</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Quality & Gouvernance (pharma-ready) -->
+  <div class="card skill-card mb-4">
+    <div class="row no-gutters">
+      <div class="col-md-2 d-flex align-items-center justify-content-center">
+        <img src="images/skills/8.jpg" alt="Data Quality & Gouvernance" class="img-fluid">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">Data Quality & Gouvernance (environnement réglementé)</h5>
+          <p class="card-text">Fiabilisation des données, traçabilité, règles de gestion, définition et suivi des KPIs.</p>
+          <ul>
+            <li><strong>Contrôles qualité</strong> : complétude, cohérence, unicité, fraîcheur</li>
+            <li><strong>Traçabilité</strong> : sources, transformations, documentation</li>
+            <li><strong>KPIs industriels</strong> : définitions, règles de calcul, seuils d’alerte</li>
+            <li><strong>Standardisation</strong> : conventions, référentiels, dictionnaire de données</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="card skill-card mb-4">
+    <div class="row no-gutters">
+      <div class="col-md-2 d-flex align-items-center justify-content-center">
+        <img src="images/skills/9.png" alt="Soft Skills" class="img-fluid">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">Soft Skills</h5>
+          <p class="card-text">Compétences clés pour transformer la donnée en décisions opérationnelles.</p>
+          <ul>
+            <li><strong>Rigueur & sens qualité</strong> : données fiables, traçables, documentées</li>
+            <li><strong>Esprit critique</strong> : validation des chiffres, détection d’anomalies, prudence méthodologique</li>
+            <li><strong>Communication & vulgarisation</strong> : restitution claire pour terrain & management</li>
+            <li><strong>Collaboration multi-métiers</strong> : production, qualité, maintenance, supply</li>
+            <li><strong>Autonomie & ownership</strong> : initiative, priorisation, amélioration continue</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Machine Learning (complément) - déplacé en bas -->
+  <div class="card skill-card mb-4">
+    <div class="row no-gutters">
+      <div class="col-md-2 d-flex align-items-center justify-content-center">
+        <img src="images/skills/7.png" alt="Machine Learning" class="img-fluid">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">Machine Learning (complément)</h5>
           <p class="card-text">Modélisation prédictive : régression, classification, clustering, séries temporelles.</p>
           <ul>
-            <li><strong>Scikit-learn</strong>, Pipelines, Modèles supervisés et non supervisés</li>
+            <li><strong>Scikit-learn</strong> : pipelines, modèles supervisés & non supervisés</li>
           </ul>
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certifications</button>
@@ -186,99 +232,28 @@
     </div>
   </div>
 
-  <!-- SQL -->
-  <div class="card skill-card mb-4">
-    <div class="row no-gutters">
-      <div class="col-md-2 d-flex align-items-center justify-content-center">
-        <img src="images/skills/3.png" alt="SQL" class="img-fluid">
-      </div>
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">SQL & Base de Données</h5>
-          <p class="card-text">Requêtes complexes, modélisation de bases relationnelles, jointures, agrégations.</p>
-          <ul>
-            <li><strong>Langage SQL</strong> : standard et avancé</li>
-            <li><strong>Conception & modélisation</strong> : (MCD/MPD)</li>
-            <li><strong>jointures</strong> : internes/externes</li>
-            <li><strong>Requêtes imbriquées</strong> : CTE, vues, indexes</li>
-          </ul>
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir Certifications</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://drive.google.com/file/d/1qjFAM84vi6LVK43wylPLZV54f7RUTNC2/view?usp=sharing" target="_blank">Certification SQL</a>
-              <a class="dropdown-item" href="https://drive.google.com/file/d/17saYoLgyQqCOApF1SkwA_nLgu4WHWszo/view?usp=sharing" target="_blank">Certification Data integration</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Outils collaboratifs & gestion de projet -->
-  <div class="card skill-card mb-4">
-    <div class="row no-gutters">
-      <div class="col-md-2 d-flex align-items-center justify-content-center">
-        <img src="images\skills\8.png" alt="Jira Confluence" class="img-fluid">
-      </div>
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">Outils Collaboratifs & Gestion de projet</h5>
-          <p class="card-text">Documentation technique, suivi des tickets, travail en équipe, méthodologies agiles.</p>
-          <ul>
-            <li><strong>Jira</strong> : Suivi de projets, workflows</li>
-            <li><strong>Confluence</strong> : Documentation, bases de connaissance</li>
-            <li><strong>Trello, Teams, Slack</strong> : Communication et gestion d’équipe</li>
-          </ul>
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Voir contenus </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://confluence.external-share.com/content/9e9299c5-4122-41bd-bedb-41a1d49f67aa" target="_blank">projet confluence / Plan du projet : Suivi des Tickets Qualité</a>
-              <a class="dropdown-item" href="https://confluence.external-share.com/content/f50418fa-ebaa-457b-8222-f21e1c9dbc6a" target="_blank">projet confluence / Documentation Utilisateur</a>
-              <a class="dropdown-item" href="https://confluence.external-share.com/content/c75b6fdd-17fa-4971-987c-d1761a705214" target="_blank">projet confluence / Documentation  Nettoyage des données & Data Cleaning Technical</a>
-              <a class="dropdown-item" href="https://jira.external-share.com/issue/341585/matthieu_carre_@_board_share" target="_blank">projet Jira / Tableau de bord tickets</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Soft Skills -->
-  <div class="card skill-card mb-4">
-    <div class="row no-gutters">
-      <div class="col-md-2 d-flex align-items-center justify-content-center">
-        <img src="images\skills\9.png" alt="Soft Skills" class="img-fluid">
-      </div>
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">Soft Skills</h5>
-          <p class="card-text">Compétences comportementales essentielles à la collaboration et la résolution de problèmes.</p>
-          <ul>
-            <li><strong>Communication</strong> : claire écrite et orale</li>
-            <li><strong>adaptabilité</strong> : Esprit critique, autonomie</li>
-            <li><strong>Leadership</strong> : travail en équipe, gestion du temps</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
 
 <!-- Section Téléchargement du CV -->
 <div class="cv-download">
   <h2>Télécharger mon CV</h2>
-  <a class="btn-download" href="https://drive.google.com/file/d/1BFy9VcsRvkJ0oKeGtjiIjNw6bdQFhgrO/view?usp=sharing" target="_blank">📄 Télécharger le CV en PDF</a>
+
+  <a class="btn-download"
+     href="assets\Matthieu_CARRE_Data_Analyst_Pharma_Industrie.pdf"
+     target="_blank" rel="noopener">
+    📄 Télécharger le CV en PDF
+  </a>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="footer">
-  <p class="text-center">&copy; 2025 Matthieu CARRÉ - Tous droits réservés</p>
+  <p class="text-center">&copy; 2026 Matthieu CARRÉ - Tous droits réservés</p>
 </footer>
 
- <!-- Animation des blocs de compétences -->
- <script>
+<!-- Animation des blocs de compétences -->
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".skill-card");
     const observer = new IntersectionObserver((entries) => {
@@ -293,5 +268,6 @@
     cards.forEach(card => observer.observe(card));
   });
 </script>
+
 </body>
 </html>
